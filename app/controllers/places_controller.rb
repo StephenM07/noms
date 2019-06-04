@@ -3,7 +3,7 @@ class PlacesController < ApplicationController
 
   def index
 
-    @places = Places.all
+    @places= Places.all
 
   end
 
