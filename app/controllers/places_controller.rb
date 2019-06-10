@@ -2,7 +2,6 @@ class PlacesController < ApplicationController
 
 
   def index
-
     @places = Place.all
 
   end
@@ -19,7 +18,7 @@ class PlacesController < ApplicationController
   private
 
 
-  def place-params
+  def place_params
     params.require(:place).permit(:name, :description, :address)
   end
 
