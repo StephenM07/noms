@@ -71,7 +71,10 @@
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <%= f.submit "Add a Comment", class: 'btn btn-primary' %>
         </div>
-        <% end %>
+        <% end %><%= simple_form_for @photo do |f| %>
+          <%= f.input :caption %>
+          <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+          <% end %>
       </div>
     </div>
   </div>
@@ -95,4 +98,9 @@
         <small><%= comment.user.email %></small>
       </blockquote>
   <% end %>
+
+  <%= simple_form_for @photo do |photo| %>
+          <%= f.input :caption %>
+          <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+          <% end %>
 
