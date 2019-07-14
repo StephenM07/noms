@@ -8,8 +8,8 @@ Rails.application.configure do
     password: ENV['SENDGRID_PASSWORD'],
     domain: 'heroku.com',
     enable_starttls_auto: true
-  }
-  
+  } 
+
   config.action_mailer.default_url_options = { host: 'noms-stephen-macias.herokuapp.com' }
   # Settings specified here will take precedence over those in config/application.rb.
 
