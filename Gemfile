@@ -79,4 +79,6 @@ gem "geocoder"
 
 gem "figaro"
 
+gem "fog-aws"
+
 
